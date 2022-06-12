@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Button from 'react-bootstrap/Button';
 
 export default function Other() {
     const title = "Other";
@@ -12,10 +13,10 @@ export default function Other() {
                 <h3></h3>
             </div>
             <Link href="/">
-                <a>前のページへ戻る</a>
+                <Button variant="outline-primary">前のページに戻る</Button>
             </Link>
             <Link href="/index">
-                <a>前のページへ戻る</a>
+                <a>最初のページへ戻る</a>
             </Link>
         </div>
     );
