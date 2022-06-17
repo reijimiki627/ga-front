@@ -1,0 +1,13 @@
+.practice-main {
+  text-align: center;
+}
+
+.practice-content {
+  margin: 20px 0px;
+}
+
+.practice-col {
+  background-color: aqua;
+  border: solid;
+  border-color: gainsboro;
+}

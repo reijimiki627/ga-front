@@ -11,6 +11,18 @@ a {
   text-decoration: none;
 }
 
+.top-main {
+  text-align: center;
+}
+
+.menu-button {
+  margin: 5px 0px;
+}
+
+.menu-button > .btn-custom {
+  padding: 5px 40px;
+}
+
 * {
   box-sizing: border-box;
 }

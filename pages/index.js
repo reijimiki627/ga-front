@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Button from 'react-bootstrap/Button'
 
 export default function Home() {
   return (
@@ -50,11 +51,8 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-          <h3 className={styles.title}>
-            画面遷移用
-          </h3>
-          <Link href='/other'>
-            <a>別画面へ遷移</a>
+          <Link href='/top'>
+            <Button variant="outline-primary">top画面</Button>
           </Link>
         </div>
       </main>
