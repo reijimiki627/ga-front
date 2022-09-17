@@ -8,19 +8,19 @@ export default function Top() {
         <div className='top-main'>
             <div className='menu-button'>
                 <Link href="/">
-                    <Button variant="outline-primary" size="lg" className='btn-custom'>登録</Button>
-                </Link>
-            </div>
-            <br/>
-            <div className='menu-button'>
-                <Link href="/">
-                    <Button variant="outline-primary" size="lg" className='btn-custom'>一覧</Button>
+                    <Button variant="outline-primary" size="lg" className='btn-custom'>マッチログ一覧</Button>
                 </Link>
             </div>
             <br/>
             <div className='menu-button'>
                 <Link href="/">
                     <Button variant="outline-primary" size="lg" className='btn-custom'>分析</Button>
+                </Link>
+            </div>
+            <br/>
+            <div className='menu-button'>
+                <Link href="/">
+                    <Button variant="outline-primary" size="lg" className='btn-custom'>役立ち情報</Button>
                 </Link>
             </div>
             <br/>
