@@ -24,7 +24,7 @@ export default function MatchLog() {
           </Col>
           <Col className='practice-col'>一覧</Col>
           <Col className='practice-col'>
-            <Link href="/top">
+            <Link href="/registration">
               <Button variant="outline-primary">登録</Button>
             </Link>
           </Col>
