@@ -29,3 +29,15 @@
   background-size: 20px 20px;
   background-repeat: repeat;
 }
+
+.registration-main {
+  text-align: center;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.other-main {
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+}
