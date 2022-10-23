@@ -23,6 +23,11 @@ export default function Top() {
                     <Button variant="outline-primary" size="lg" className='btn-custom'>分析</Button>
                 </Link>
             </div>
+            <div className='menu-button'>
+                <Link href="/useful_info/list">
+                    <Button variant="outline-primary" size="lg" className='btn-custom'>役立ち情報</Button>
+                </Link>
+            </div>
             <br/>
             <div className='menu-button'>
                 <Link href="/other">
