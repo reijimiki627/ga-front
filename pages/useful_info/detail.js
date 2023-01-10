@@ -1,19 +1,22 @@
 import ReactMarkdown from 'react-markdown'
-import {Container, Row, Col, Button} from 'react-bootstrap';
+import {Container, Row, Col, Button, Form} from 'react-bootstrap';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import axios from 'axios';
 import moment from 'moment';
 
 export default function Tips() {
   const [detail, setDetail] = useState([])
+  const [detailLink, setDetailLink] = useState([])
 
   useEffect(() => {
     const search = window.location.search
     const query = new URLSearchParams(search)
   
     console.log(query.get('id'))
+    setDetailLink('/useful_info/update?id=' + query.get('id'))
     getUsefulInfo(query.get('id'))
   }, [])
 
@@ -52,6 +55,19 @@ export default function Tips() {
     <div className='tips-main'>
       {detail !== undefined && // detailを取得した後に表示 
       <Container>
+        <Row>
+          <Col>
+            <Link href="/useful_info/list">
+              <Button variant="outline-primary" size="md" className='btn-custom'>一覧に戻る</Button>
+            </Link>
+          </Col>
+          <Col>役立ち情報</Col>
+          <Col>
+            <Link href={detailLink}>
+              <Button variant="outline-primary" size="md" className='btn-custom'>編集</Button>
+            </Link>
+          </Col>
+        </Row>
         <Row>
           <Col>
             title: {detail.title}
