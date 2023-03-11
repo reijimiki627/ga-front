@@ -56,7 +56,7 @@ export default function UsefulUpdate() {
     }
 
     console.log(data)
-    axios.put('http://localhost:8080/api/useful_info', data).then(res => alert('更新に成功しました。')).catch(e => console.error("更新処理でエラー発生。"))
+    axios.put('http://54.238.86.31/api/useful_info', data).then(res => alert('更新に成功しました。')).catch(e => console.error("更新処理でエラー発生。"))
   }
 
   return (
