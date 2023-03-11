@@ -39,7 +39,7 @@ export default function UsefulResistration() {
       "contents": contents
     }
 
-    axios.post('http://localhost:8080/api/useful_info', data).then(res => alert('登録に成功しました。')).catch(e => console.error("エラー発生"))
+    axios.post('http://54.238.86.31/api/useful_info', data).then(res => alert('登録に成功しました。')).catch(e => console.error("エラー発生"))
   }
 
   return (
