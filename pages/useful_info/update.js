@@ -19,7 +19,7 @@ export default function UsefulUpdate() {
   }, [])
 
   function getDetail(id) {
-    axios.get('hhttp://54.238.86.31/api/useful_info/detail?id='+ id).then(res => {
+    axios.get('http://54.238.86.31/api/useful_info/detail?id='+ id).then(res => {
       console.log(res.data.useful_info)
       setId(res.data.useful_info[0].useful_info_id)
       setGameId(res.data.useful_info[0].game_id)
