@@ -21,7 +21,7 @@ export default function Tips() {
   }, [])
 
   function getUsefulInfo(id) {
-    axios.get('http://localhost:8080/api/useful_info/detail?id='+ id).then(res => {
+    axios.get('http://54.238.86.31/api/useful_info/detail?id='+ id).then(res => {
       console.log(res.data.useful_info)
       setDetail(res.data.useful_info[0])
     }).catch(e => console.error(e))

@@ -14,7 +14,7 @@ export default function UsefulResistration() {
   useEffect(() => getGames(), [])
 
   function getGames() {
-    axios.get('http://localhost:8080/api/game/list')
+    axios.get('http://54.238.86.31/api/game/list')
     .then(res => {
       setGames(res.data.games)
     }).catch(e => {

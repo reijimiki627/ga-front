@@ -49,7 +49,7 @@ export default function Tips() {
   useEffect(() => getUseulInfoList(), [])
 
   function getUseulInfoList() {
-    axios.get('http://localhost:8080/api/useful_info/list').then(res => {
+    axios.get('http://54.238.86.31/api/useful_info/list').then(res => {
       console.log(res.data.useful_info)
       createDatas(res.data.useful_info)
     }).catch(e => console.error(e))
